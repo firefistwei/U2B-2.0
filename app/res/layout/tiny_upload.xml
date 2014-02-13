@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fabric"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/tiny_upload_reback"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_btn_back"
+            android:onClick="tiny_up_back"
+            android:text="返回"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="照片上传"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tiny_upload_save"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/title_btn_right"
+            android:onClick="tiny_upload_btn"
+            android:text="上传"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <RelativeLayout
+                android:id="@+id/about_avatar_layout"
+                android:layout_marginLeft="12dp"
+                android:layout_width="240dp"
+                android:layout_height="240dp" >
+
+                <ImageButton
+                    android:id="@+id/file_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/avatar_background_white"
+                    android:padding="8dip"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/photo_default0" />
+
+                <Button
+                    android:id="@+id/up_byn1"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:onClick="upSave"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/about_button_change_logo" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:text="标题"
+                    android:textColor="#800080"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/file_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="bottom"
+                    android:background="@drawable/login_editbox"
+                    android:hint="输入照片标题"
+                    android:maxLength="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top"
+                    android:layout_margin="6dp"
+                    android:text="描述"
+                    android:textColor="#800080"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/file_description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/login_editbox"
+                    android:cursorVisible="true"
+                    android:gravity="top"
+                    android:hint="输入照片描述"
+                    android:maxLength="30"
+                    android:singleLine="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

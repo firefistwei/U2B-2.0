@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+ 
+        <TextView 
+            android:id="@+id/left_wanted_tv1"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="通缉令"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#800080"
+            />
+        <TextView 
+            android:id="@+id/left_wanted_tv2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="通缉榜"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#800080"
+            />
+
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/left_wanted_cursor"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/cursor"
+        android:background="#ffffff"/>
+    
+    <firefist.wei.left.CustomViewPager
+            android:id="@+id/left_wanted_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    
+<!--     <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        /> -->
+ 
+</LinearLayout>

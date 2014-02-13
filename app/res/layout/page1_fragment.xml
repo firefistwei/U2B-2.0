@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+       <!--  <FrameLayout
+            xmlns:app="http://schemas.android.com/apk/res/firefist.wei.main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/picture_frame"
+            android:orientation="vertical" >
+
+            <Gallery
+                android:id="@+id/home_gallery"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="25dp"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:padding="5dp"
+                android:spacing="5dip" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="25dp"
+                android:background="#00000000"
+                android:orientation="vertical" >
+
+                <firefist.wei.main.widget.FlowIndicator
+                    android:id="@+id/myFlowIndicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dip"
+                    android:gravity="center"
+                    app:count="4"
+                    app:point_normal_color="#45000000"
+                    app:point_radius="3dip"
+                    app:point_seleted_color="#ffffff"
+                    app:point_size="5dip"
+                    app:space="10dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/photo_title1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="一周精彩内容推荐"
+                android:textColor="#800080"
+                android:textSize="18dip" />
+        </FrameLayout> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <firefist.wei.main.widget.RefreshListView
+                android:id="@+id/page1_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#0000"
+                android:divider="@null"
+                android:listSelector="#0000"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

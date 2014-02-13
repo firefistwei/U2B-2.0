@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:padding="5dp"
+    android:layout_marginBottom="3dp"
+    android:background="@drawable/card_bg"
+    android:orientation="vertical" >
+
+
+        <ImageView
+            android:id="@+id/page3_item_img"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/picture2" />
+
+        <TextView
+            android:id="@+id/page3_item_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/page3_item_img"
+            android:text="Top 1"
+            android:textColor="#800080"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/page3_item_title"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/page3_item_top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/page3_item_top"
+            android:singleLine="true"
+            android:text="照片的标题"
+            android:textColor="#3f3f3f"
+            android:textSize="16sp" />
+
+       
+
+        <TextView
+            android:id="@+id/page3_item_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/page3_item_img"
+            android:layout_below="@id/page3_item_top"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:drawablePadding="5dp"
+            android:text="100"
+            android:drawableLeft="@drawable/little_like"
+            android:textColor="#4f4f4f"
+            android:textSize="14sp" />
+    </RelativeLayout>

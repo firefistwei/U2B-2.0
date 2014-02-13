@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/picture_frame"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/friend2b_item_head"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_margin="8dip"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/friend2b_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/friend2b_item_head"
+            android:text="好友名字"
+            android:textColor="#ff397cbf"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/friend2b_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/friend2b_item_name"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/friend2b_item_head"
+            android:singleLine="true"
+            android:text="照片标题照片标题"
+            android:textColor="#cc232323"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/friend2b_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/friend2b_item_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="5月3日"
+            android:textColor="#cc3f3f3f"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <TextView
+            android:id="@+id/friend2b_item_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
+            android:text="照片的描述.....片的描述......照片的描述..."
+            android:textColor="#3f3f3f"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/friend2b_item_photo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="#D3D3D3" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/friend2b_item_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@drawable/little_like"
+            android:drawablePadding="10dp"
+            android:text="100"
+            android:textColor="#ff3f3f3f"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dip"
+            android:background="#ffD3D3D3" />
+
+        <TextView
+            android:id="@+id/friend2b_item_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/little_msg"
+            android:drawablePadding="10dp"
+            android:text="100"
+            android:textColor="#ff3f3f3f"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
